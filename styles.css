@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.link{
+    text-decoration: none;
+}
+
+#main-content-page{
+    background-image: url(./images/nightDining.jpg);
+    background-size: cover;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header{
+    font-family: 'Mukta', sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: black;
+}
+
+.header_logo{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.logo{
+    color: white;
+    font-size: 45px;
+}
+
+.header_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+    width: 100vw;
+    height: 10vh;
+}
+
+ul{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_link{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 1rem;
+    color: white;
+}
+
+.header_link:hover{
+    color: rgb(145, 143, 143);
+}
+
+.gallery{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 10px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    }
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    }
+
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    }
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    }
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    }
+
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    }
+
+.footer{
+    padding: 3.5rem;
+    background-color: black;
+}
+
+.header_restaurant_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant_link{
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.restaurant_link:hover{
+    color: rgb(145, 143, 143);
+}
+
+    /* About Page */
+
+#about-content-page{
+    font-family: 'Mukta', sans-serif;
+    background-color: black;
+    width: 100%;
+    height: 130vh;
+}
+
+.about_container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.about_image{
+    width: 800px;
+}
+
+.right_page{
+    color: white;
+    margin: 2rem;
+}
+
+.about_heading{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about_paragraph{
+    margin-bottom: 1rem;
+    line-height: 25px;
+}
+
+    /* Menu Page */
+
+#menu-content-page{
+    font-family: 'RocknRoll One', sans-serif;
+    width: 100%;
+    height: 130vh;
+}
+
+.menu_container{display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.menu_table{
+    display: flex;
+    flex-direction: column;
+}
+
+.food_category{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    width:1200px;
+    margin: 50px auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom: 60px;
+}
+
+.title h4{
+    text-transform:capitalize;
+    font-size:36px;
+    position:relative;
+    display:inline-block;
+    padding-bottom:10px;
+}
+
+.title h4 span{
+    display:block;
+    font-size:18px;
+    font-style:italic;
+    margin-bottom:10px;
+}
+
+.title h4:before{
+    position:absolute;
+    content:"";
+    width:100px;
+    height:2px;
+    background-color:#000000;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.single-menu{
+    flex-basis:580px;
+    margin-bottom:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid #ddd;
+}
+
+.single-menu:nth-child(5), .single-menu:nth-child(6){
+    border-bottom:0;
+}
+
+.single-menu{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.single-menu:hover img{
+    border-radius:0;
+}
+
+.single-menu img{
+    max-width:180px;
+    margin-right:30px;
+    border-radius:50%;
+    border:1px solid #ddd;
+    padding:3px;
+    transition:.5s;
+}
+
+.single-menu h4{
+    text-transform:capitalize;
+    font-size:22px;
+    border-bottom:1px dashed #333;
+    margin-bottom:5px;
+    padding-bottom:5px;
+}
+
+.price{
+    margin-right: 10px;
+}
